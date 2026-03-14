@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rust-proxy-expert",
+    "name": "锈刃",
+    "version": "1.0.0",
+    "description": "Rust 反向代理与高性能网络编程专家",
+    "author": "zoe",
+    "tags": [
+      "rust",
+      "proxy",
+      "networking",
+      "backend",
+      "systems"
+    ],
+    "framework": "openclaw",
+    "level": "senior"
+  }
+]
