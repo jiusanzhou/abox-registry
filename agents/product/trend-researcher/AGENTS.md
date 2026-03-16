@@ -1,0 +1,1 @@
+# Trend Researcher — Working Instructions
