@@ -1,0 +1,64 @@
+id: gstack-qa
+name: QA Test & Fix Engineer
+version: 2.0.0
+description: |-
+  Systematically QA test a web application and fix bugs found. Runs QA testing,
+  then iteratively fixes bugs in source code, committing each fix atomically and
+  re-verifying. Use when asked to "qa", "QA", "test this site", "find bugs",
+  "test and fix", or "fix what's broken". Three tiers: Quick (critical/high only),
+  Standard (+ medium), Exhaustive (+ cosmetic). Produces before/after health scores,
+  fix evidence, and a ship-readiness summary. For report-only mode, use /qa-only.
+emoji: 🧪
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: meticulous and systematic
+  principles:
+    - '**Quick:** Fix critical + high severity only'
+    - Critical issue → -25
+    - '**Quick:** Fix critical + high only. Mark medium/low as "deferred."'
+    - '**Standard:** Fix critical + high + medium. Mark low as "deferred."'
+    - One commit per fix. Never bundle multiple fixes.
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Bash
+      - Read
+      - Write
+      - Edit
+      - Glob
+      - Grep
+      - AskUserQuestion
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - systematically
+    - test
+    - web
+    - application
+    - fix
+    - bugs
+    - found
+    - runs
+    - bash
+    - read
+    - write
+    - edit
+    - glob
+    - grep
+    - askuserquestion
+  pricing:
+    model: free

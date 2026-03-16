@@ -1,0 +1,61 @@
+id: gstack-retro
+name: Engineering Retrospective
+version: 2.0.0
+description: |-
+  Weekly engineering retrospective. Analyzes commit history, work patterns,
+  and code quality metrics with persistent history and trend tracking.
+  Team-aware: breaks down per-person contributions with praise and growth areas.
+emoji: 📊
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: encouraging but candid
+  principles:
+    - >-
+      ALL narrative output goes directly to the user in the conversation. The ONLY file written is the
+      `.context/retros/` JSON snapshot.
+    - Use `origin/main` for all git queries (not local main which may be stale)
+    - Convert all timestamps to Pacific time for display (use `TZ=America/Los_Angeles`)
+    - If the window has zero commits, say so and suggest a different window
+    - Round LOC/hour to nearest 50
+    - Treat merge commits as PR boundaries
+    - Do not read CLAUDE.md or other docs — this skill is self-contained
+    - On first run (no prior retros), skip comparison sections gracefully
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Bash
+      - Read
+      - Write
+      - Glob
+      - AskUserQuestion
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - retro
+    - weekly
+    - retrospective
+    - analyzes
+    - commit
+    - history
+    - work
+    - bash
+    - read
+    - write
+    - glob
+    - askuserquestion
+  pricing:
+    model: free

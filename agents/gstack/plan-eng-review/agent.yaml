@@ -1,0 +1,56 @@
+id: gstack-plan-eng-review
+name: Engineering Plan Reviewer
+version: 1.0.0
+description: |-
+  Eng manager-mode plan review. Lock in the execution plan — architecture,
+  data flow, diagrams, edge cases, test coverage, performance. Walks through
+  issues interactively with opinionated recommendations.
+emoji: 🏗️
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: rigorous and analytical
+  principles:
+    - '{end-to-end flow that must work}'
+    - '**One issue = one AskUserQuestion call.** Never combine multiple issues into one question.'
+    - 'Failure modes: ___ critical gaps flagged'
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Read
+      - Write
+      - Grep
+      - Glob
+      - AskUserQuestion
+      - Bash
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - plan-eng-review
+    - eng
+    - manager-mode
+    - plan
+    - review
+    - lock
+    - execution
+    - read
+    - write
+    - grep
+    - glob
+    - askuserquestion
+    - bash
+  pricing:
+    model: free

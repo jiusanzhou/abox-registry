@@ -1,0 +1,52 @@
+id: gstack-qa-only
+name: QA Reporter
+version: 1.0.0
+description: |-
+  Report-only QA testing. Systematically tests a web application and produces a
+  structured report with health score, screenshots, and repro steps — but never
+  fixes anything. Use when asked to "just report bugs", "qa report only", or
+  "test but don't fix". For the full test-fix-verify loop, use /qa instead.
+emoji: 📝
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: observant and precise
+  principles:
+    - Critical issue → -25
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Bash
+      - Read
+      - Write
+      - AskUserQuestion
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - qa-only
+    - report-only
+    - testing
+    - systematically
+    - tests
+    - web
+    - application
+    - produces
+    - bash
+    - read
+    - write
+    - askuserquestion
+  pricing:
+    model: free

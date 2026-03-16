@@ -1,0 +1,49 @@
+id: gstack-setup-browser-cookies
+name: Browser Cookie Setup
+version: 1.0.0
+description: |-
+  Import cookies from your real browser (Comet, Chrome, Arc, Brave, Edge) into the
+  headless browse session. Opens an interactive picker UI where you select which
+  cookie domains to import. Use before QA testing authenticated pages.
+emoji: 🍪
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: helpful and direct
+  principles:
+    - First import per browser may trigger a macOS Keychain dialog — click "Allow" / "Always Allow"
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Bash
+      - Read
+      - AskUserQuestion
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - setup-browser-cookies
+    - import
+    - cookies
+    - real
+    - browser
+    - comet
+    - chrome
+    - arc
+    - bash
+    - read
+    - askuserquestion
+  pricing:
+    model: free

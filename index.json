@@ -1,22 +1,21 @@
 {
   "version": "1.0.0",
-  "generated": "2026-03-16T05:31:48.987Z",
-  "total": 140,
+  "generated": "2026-03-16T07:23:24.999Z",
+  "total": 151,
   "categories": [
     "academic",
     "design",
     "engineering",
-    "examples",
     "game-development",
-    "integrations",
+    "gstack",
     "marketing",
     "paid-media",
     "product",
     "project-management",
+    "rust-proxy-expert",
     "sales",
     "spatial-computing",
     "specialized",
-    "strategy",
     "support",
     "testing"
   ],
@@ -350,6 +349,94 @@
       "path": "agents/game-development/technical-artist"
     },
     {
+      "id": "gstack-browse",
+      "name": "Headless Browser",
+      "emoji": "🔍",
+      "description": "Fast headless browser for QA testing and site dogfooding. Navigate any URL, interact with\nelements, verify page state, diff before/after actions, take annotated screenshots, check\nresponsive layouts, test forms and uploads, handle dialogs, and assert element states.\n~100ms per command. Use when you need to test a feature, verify a deployment, dogfood a\nuser flow, or file a bug with evidence.",
+      "category": "gstack",
+      "path": "agents/gstack/browse"
+    },
+    {
+      "id": "gstack-gstack",
+      "name": "GStack Browser QA",
+      "emoji": "🌐",
+      "description": "Fast headless browser for QA testing and site dogfooding. Navigate any URL, interact with\nelements, verify page state, diff before/after actions, take annotated screenshots, check\nresponsive layouts, test forms and uploads, handle dialogs, and assert element states.\n~100ms per command. Use when you need to test a feature, verify a deployment, dogfood a\nuser flow, or file a bug with evidence.",
+      "category": "gstack",
+      "path": "agents/gstack/gstack"
+    },
+    {
+      "id": "gstack-gstack-upgrade",
+      "name": "GStack Upgrade",
+      "emoji": "⬆️",
+      "description": "Upgrade gstack to the latest version. Detects global vs vendored install,\nruns the upgrade, and shows what's new.",
+      "category": "gstack",
+      "path": "agents/gstack/gstack-upgrade"
+    },
+    {
+      "id": "gstack-plan-ceo-review",
+      "name": "CEO Plan Reviewer",
+      "emoji": "📋",
+      "description": "CEO/founder-mode plan review. Rethink the problem, find the 10-star product,\nchallenge premises, expand scope when it creates a better product. Three modes:\nSCOPE EXPANSION (dream big), HOLD SCOPE (maximum rigor), SCOPE REDUCTION\n(strip to essentials).",
+      "category": "gstack",
+      "path": "agents/gstack/plan-ceo-review"
+    },
+    {
+      "id": "gstack-plan-eng-review",
+      "name": "Engineering Plan Reviewer",
+      "emoji": "🏗️",
+      "description": "Eng manager-mode plan review. Lock in the execution plan — architecture,\ndata flow, diagrams, edge cases, test coverage, performance. Walks through\nissues interactively with opinionated recommendations.",
+      "category": "gstack",
+      "path": "agents/gstack/plan-eng-review"
+    },
+    {
+      "id": "gstack-qa",
+      "name": "QA Test & Fix Engineer",
+      "emoji": "🧪",
+      "description": "Systematically QA test a web application and fix bugs found. Runs QA testing,\nthen iteratively fixes bugs in source code, committing each fix atomically and\nre-verifying. Use when asked to \"qa\", \"QA\", \"test this site\", \"find bugs\",\n\"test and fix\", or \"fix what's broken\". Three tiers: Quick (critical/high only),\nStandard (+ medium), Exhaustive (+ cosmetic). Produces before/after health scores,\nfix evidence, and a ship-readiness summary. For report-only mode, use /qa-only.",
+      "category": "gstack",
+      "path": "agents/gstack/qa"
+    },
+    {
+      "id": "gstack-qa-only",
+      "name": "QA Reporter",
+      "emoji": "📝",
+      "description": "Report-only QA testing. Systematically tests a web application and produces a\nstructured report with health score, screenshots, and repro steps — but never\nfixes anything. Use when asked to \"just report bugs\", \"qa report only\", or\n\"test but don't fix\". For the full test-fix-verify loop, use /qa instead.",
+      "category": "gstack",
+      "path": "agents/gstack/qa-only"
+    },
+    {
+      "id": "gstack-retro",
+      "name": "Engineering Retrospective",
+      "emoji": "📊",
+      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns,\nand code quality metrics with persistent history and trend tracking.\nTeam-aware: breaks down per-person contributions with praise and growth areas.",
+      "category": "gstack",
+      "path": "agents/gstack/retro"
+    },
+    {
+      "id": "gstack-review",
+      "name": "Pre-Landing Code Reviewer",
+      "emoji": "🔬",
+      "description": "Pre-landing PR review. Analyzes diff against main for SQL safety, LLM trust\nboundary violations, conditional side effects, and other structural issues.",
+      "category": "gstack",
+      "path": "agents/gstack/review"
+    },
+    {
+      "id": "gstack-setup-browser-cookies",
+      "name": "Browser Cookie Setup",
+      "emoji": "🍪",
+      "description": "Import cookies from your real browser (Comet, Chrome, Arc, Brave, Edge) into the\nheadless browse session. Opens an interactive picker UI where you select which\ncookie domains to import. Use before QA testing authenticated pages.",
+      "category": "gstack",
+      "path": "agents/gstack/setup-browser-cookies"
+    },
+    {
+      "id": "gstack-ship",
+      "name": "Release Engineer",
+      "emoji": "🚢",
+      "description": "Ship workflow: merge main, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR.",
+      "category": "gstack",
+      "path": "agents/gstack/ship"
+    },
+    {
       "id": "marketing-ai-citation-strategist",
       "name": "AI Citation Strategist",
       "emoji": "🔮",
@@ -566,20 +653,20 @@
       "path": "agents/marketing/zhihu-strategist"
     },
     {
-      "id": "paid-media-paid-media-auditor",
-      "name": "Paid Media Auditor",
-      "emoji": "📋",
-      "description": "Comprehensive paid media auditor who systematically evaluates Google Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account structure, tracking, bidding, creative, audiences, and competitive positioning. Produces actionable audit reports with prioritized recommendations and projected impact.",
-      "category": "paid-media",
-      "path": "agents/paid-media/paid-media-auditor"
-    },
-    {
       "id": "paid-media-ad-creative-strategist",
       "name": "Ad Creative Strategist",
       "emoji": "✍️",
       "description": "Paid media creative specialist focused on ad copywriting, RSA optimization, asset group design, and creative testing frameworks across Google, Meta, Microsoft, and programmatic platforms. Bridges the gap between performance data and persuasive messaging.",
       "category": "paid-media",
       "path": "agents/paid-media/ad-creative-strategist"
+    },
+    {
+      "id": "paid-media-paid-media-auditor",
+      "name": "Paid Media Auditor",
+      "emoji": "📋",
+      "description": "Comprehensive paid media auditor who systematically evaluates Google Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account structure, tracking, bidding, creative, audiences, and competitive positioning. Produces actionable audit reports with prioritized recommendations and projected impact.",
+      "category": "paid-media",
+      "path": "agents/paid-media/paid-media-auditor"
     },
     {
       "id": "paid-media-paid-social-strategist",
@@ -686,6 +773,14 @@
       "path": "agents/project-management/project-shepherd"
     },
     {
+      "id": "project-management-senior-project-manager",
+      "name": "Senior Project Manager",
+      "emoji": "📝",
+      "description": "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec requirements",
+      "category": "project-management",
+      "path": "agents/project-management/senior-project-manager"
+    },
+    {
       "id": "project-management-studio-operations",
       "name": "Studio Operations",
       "emoji": "🏭",
@@ -702,28 +797,12 @@
       "path": "agents/project-management/studio-producer"
     },
     {
-      "id": "project-management-senior-project-manager",
-      "name": "Senior Project Manager",
-      "emoji": "📝",
-      "description": "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec requirements",
-      "category": "project-management",
-      "path": "agents/project-management/senior-project-manager"
-    },
-    {
       "id": "sales-account-strategist",
       "name": "Account Strategist",
       "emoji": "🗺️",
       "description": "Expert post-sale account strategist specializing in land-and-expand execution, stakeholder mapping, QBR facilitation, and net revenue retention. Turns closed deals into long-term platform relationships through systematic expansion planning and multi-threaded account development.",
       "category": "sales",
       "path": "agents/sales/account-strategist"
-    },
-    {
-      "id": "sales-sales-coach",
-      "name": "Sales Coach",
-      "emoji": "🏋️",
-      "description": "Expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy, and forecast accuracy. Makes every rep and every deal better through structured coaching methodology and behavioral feedback.",
-      "category": "sales",
-      "path": "agents/sales/sales-coach"
     },
     {
       "id": "sales-deal-strategist",
@@ -740,14 +819,6 @@
       "description": "Coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and call structure that surfaces real buying motivation.",
       "category": "sales",
       "path": "agents/sales/discovery-coach"
-    },
-    {
-      "id": "sales-sales-engineer",
-      "name": "Sales Engineer",
-      "emoji": "🛠️",
-      "description": "Senior pre-sales engineer specializing in technical discovery, demo engineering, POC scoping, competitive battlecards, and bridging product capabilities to business outcomes. Wins the technical decision so the deal can close.",
-      "category": "sales",
-      "path": "agents/sales/sales-engineer"
     },
     {
       "id": "sales-outbound-strategist",
@@ -772,6 +843,22 @@
       "description": "Strategic proposal architect who transforms RFPs and sales opportunities into compelling win narratives. Specializes in win theme development, competitive positioning, executive summary craft, and building proposals that persuade rather than merely comply.",
       "category": "sales",
       "path": "agents/sales/proposal-strategist"
+    },
+    {
+      "id": "sales-sales-coach",
+      "name": "Sales Coach",
+      "emoji": "🏋️",
+      "description": "Expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy, and forecast accuracy. Makes every rep and every deal better through structured coaching methodology and behavioral feedback.",
+      "category": "sales",
+      "path": "agents/sales/sales-coach"
+    },
+    {
+      "id": "sales-sales-engineer",
+      "name": "Sales Engineer",
+      "emoji": "🛠️",
+      "description": "Senior pre-sales engineer specializing in technical discovery, demo engineering, POC scoping, competitive battlecards, and bridging product capabilities to business outcomes. Wins the technical decision so the deal can close.",
+      "category": "sales",
+      "path": "agents/sales/sales-engineer"
     },
     {
       "id": "spatial-computing-macos-spatial-metal-engineer",
@@ -878,76 +965,20 @@
       "path": "agents/specialized/corporate-training-designer"
     },
     {
-      "id": "specialized-data-consolidation-agent",
-      "name": "Data Consolidation Agent",
-      "emoji": "🗄️",
-      "description": "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries",
-      "category": "specialized",
-      "path": "agents/specialized/data-consolidation-agent"
-    },
-    {
-      "id": "specialized-government-digital-presales-consultant",
-      "name": "Government Digital Presales Consultant",
-      "emoji": "🏛️",
-      "description": "Presales expert for China's government digital transformation market (ToG), proficient in policy interpretation, solution design, bid document preparation, POC validation, compliance requirements (classified protection/cryptographic assessment/Xinchuang domestic IT), and stakeholder management — helping technical teams efficiently win government IT projects.",
-      "category": "specialized",
-      "path": "agents/specialized/government-digital-presales-consultant"
-    },
-    {
-      "id": "specialized-healthcare-marketing-compliance-specialist",
-      "name": "Healthcare Marketing Compliance Specialist",
-      "emoji": "⚕️",
-      "description": "Expert in healthcare marketing compliance in China, proficient in the Advertising Law, Medical Advertisement Management Measures, Drug Administration Law, and related regulations — covering pharmaceuticals, medical devices, medical aesthetics, health supplements, and internet healthcare across content review, risk control, platform rule interpretation, and patient privacy protection, helping enterprises conduct effective health marketing within legal boundaries.",
-      "category": "specialized",
-      "path": "agents/specialized/healthcare-marketing-compliance-specialist"
-    },
-    {
-      "id": "specialized-identity-graph-operator",
-      "name": "Identity Graph Operator",
-      "emoji": "🕸️",
-      "description": "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this entity?\" - deterministically, even under concurrent writes.",
-      "category": "specialized",
-      "path": "agents/specialized/identity-graph-operator"
-    },
-    {
-      "id": "specialized-lsp-index-engineer",
-      "name": "LSP/Index Engineer",
-      "emoji": "🔎",
-      "description": "Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing",
-      "category": "specialized",
-      "path": "agents/specialized/lsp-index-engineer"
-    },
-    {
-      "id": "specialized-recruitment-specialist",
-      "name": "Recruitment Specialist",
-      "emoji": "🎯",
-      "description": "Expert recruitment operations and talent acquisition specialist — skilled in China's major hiring platforms, talent assessment frameworks, and labor law compliance. Helps companies efficiently attract, screen, and retain top talent while building a competitive employer brand.",
-      "category": "specialized",
-      "path": "agents/specialized/recruitment-specialist"
-    },
-    {
-      "id": "specialized-report-distribution-agent",
-      "name": "Report Distribution Agent",
-      "emoji": "📤",
-      "description": "AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters",
-      "category": "specialized",
-      "path": "agents/specialized/report-distribution-agent"
-    },
-    {
-      "id": "specialized-sales-data-extraction-agent",
-      "name": "Sales Data Extraction Agent",
-      "emoji": "📊",
-      "description": "AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live reporting",
-      "category": "specialized",
-      "path": "agents/specialized/sales-data-extraction-agent"
-    },
-    {
       "id": "specialized-cultural-intelligence-strategist",
       "name": "Cultural Intelligence Strategist",
       "emoji": "🌍",
       "description": "CQ specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically across intersectional identities.",
       "category": "specialized",
       "path": "agents/specialized/cultural-intelligence-strategist"
+    },
+    {
+      "id": "specialized-data-consolidation-agent",
+      "name": "Data Consolidation Agent",
+      "emoji": "🗄️",
+      "description": "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries",
+      "category": "specialized",
+      "path": "agents/specialized/data-consolidation-agent"
     },
     {
       "id": "specialized-developer-advocate",
@@ -974,12 +1005,44 @@
       "path": "agents/specialized/french-consulting-market-navigator"
     },
     {
+      "id": "specialized-government-digital-presales-consultant",
+      "name": "Government Digital Presales Consultant",
+      "emoji": "🏛️",
+      "description": "Presales expert for China's government digital transformation market (ToG), proficient in policy interpretation, solution design, bid document preparation, POC validation, compliance requirements (classified protection/cryptographic assessment/Xinchuang domestic IT), and stakeholder management — helping technical teams efficiently win government IT projects.",
+      "category": "specialized",
+      "path": "agents/specialized/government-digital-presales-consultant"
+    },
+    {
+      "id": "specialized-healthcare-marketing-compliance-specialist",
+      "name": "Healthcare Marketing Compliance Specialist",
+      "emoji": "⚕️",
+      "description": "Expert in healthcare marketing compliance in China, proficient in the Advertising Law, Medical Advertisement Management Measures, Drug Administration Law, and related regulations — covering pharmaceuticals, medical devices, medical aesthetics, health supplements, and internet healthcare across content review, risk control, platform rule interpretation, and patient privacy protection, helping enterprises conduct effective health marketing within legal boundaries.",
+      "category": "specialized",
+      "path": "agents/specialized/healthcare-marketing-compliance-specialist"
+    },
+    {
+      "id": "specialized-identity-graph-operator",
+      "name": "Identity Graph Operator",
+      "emoji": "🕸️",
+      "description": "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this entity?\" - deterministically, even under concurrent writes.",
+      "category": "specialized",
+      "path": "agents/specialized/identity-graph-operator"
+    },
+    {
       "id": "specialized-korean-business-navigator",
       "name": "Korean Business Navigator",
       "emoji": "🇰🇷",
       "description": "Korean business culture for foreign professionals — 품의 decision process, nunchi reading, KakaoTalk business etiquette, hierarchy navigation, and relationship-first deal mechanics",
       "category": "specialized",
       "path": "agents/specialized/korean-business-navigator"
+    },
+    {
+      "id": "specialized-lsp-index-engineer",
+      "name": "LSP/Index Engineer",
+      "emoji": "🔎",
+      "description": "Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing",
+      "category": "specialized",
+      "path": "agents/specialized/lsp-index-engineer"
     },
     {
       "id": "specialized-mcp-builder",
@@ -998,20 +1061,36 @@
       "path": "agents/specialized/model-qa-specialist"
     },
     {
+      "id": "specialized-recruitment-specialist",
+      "name": "Recruitment Specialist",
+      "emoji": "🎯",
+      "description": "Expert recruitment operations and talent acquisition specialist — skilled in China's major hiring platforms, talent assessment frameworks, and labor law compliance. Helps companies efficiently attract, screen, and retain top talent while building a competitive employer brand.",
+      "category": "specialized",
+      "path": "agents/specialized/recruitment-specialist"
+    },
+    {
+      "id": "specialized-report-distribution-agent",
+      "name": "Report Distribution Agent",
+      "emoji": "📤",
+      "description": "AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters",
+      "category": "specialized",
+      "path": "agents/specialized/report-distribution-agent"
+    },
+    {
+      "id": "specialized-sales-data-extraction-agent",
+      "name": "Sales Data Extraction Agent",
+      "emoji": "📊",
+      "description": "AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live reporting",
+      "category": "specialized",
+      "path": "agents/specialized/sales-data-extraction-agent"
+    },
+    {
       "id": "specialized-salesforce-architect",
       "name": "Salesforce Architect",
       "emoji": "☁️",
       "description": "Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment strategy, and data model governance for enterprise-scale orgs",
       "category": "specialized",
       "path": "agents/specialized/salesforce-architect"
-    },
-    {
-      "id": "specialized-workflow-architect",
-      "name": "Workflow Architect",
-      "emoji": "🗺️",
-      "description": "Workflow design specialist who maps complete workflow trees for every system, user journey, and agent interaction — covering happy paths, all branch conditions, failure modes, recovery paths, handoff contracts, and observable states to produce build-ready specs that agents can implement against and QA can test against.",
-      "category": "specialized",
-      "path": "agents/specialized/workflow-architect"
     },
     {
       "id": "specialized-study-abroad-advisor",
@@ -1028,6 +1107,14 @@
       "description": "Expert supply chain management and procurement strategy specialist — skilled in supplier development, strategic sourcing, quality control, and supply chain digitalization. Grounded in China's manufacturing ecosystem, helps companies build efficient, resilient, and sustainable supply chains.",
       "category": "specialized",
       "path": "agents/specialized/supply-chain-strategist"
+    },
+    {
+      "id": "specialized-workflow-architect",
+      "name": "Workflow Architect",
+      "emoji": "🗺️",
+      "description": "Workflow design specialist who maps complete workflow trees for every system, user journey, and agent interaction — covering happy paths, all branch conditions, failure modes, recovery paths, handoff contracts, and observable states to produce build-ready specs that agents can implement against and QA can test against.",
+      "category": "specialized",
+      "path": "agents/specialized/workflow-architect"
     },
     {
       "id": "support-analytics-reporter",

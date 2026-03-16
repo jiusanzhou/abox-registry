@@ -1,0 +1,52 @@
+id: gstack-browse
+name: Headless Browser
+version: 1.1.0
+description: |-
+  Fast headless browser for QA testing and site dogfooding. Navigate any URL, interact with
+  elements, verify page state, diff before/after actions, take annotated screenshots, check
+  responsive layouts, test forms and uploads, handle dialogs, and assert element states.
+  ~100ms per command. Use when you need to test a feature, verify a deployment, dogfood a
+  user flow, or file a bug with evidence.
+emoji: 🔍
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: precise and efficient
+  principles:
+    - Follow established workflows
+    - Deliver thorough, evidence-based output
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Bash
+      - Read
+      - AskUserQuestion
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - browse
+    - fast
+    - headless
+    - browser
+    - testing
+    - site
+    - dogfooding
+    - navigate
+    - bash
+    - read
+    - askuserquestion
+  pricing:
+    model: free

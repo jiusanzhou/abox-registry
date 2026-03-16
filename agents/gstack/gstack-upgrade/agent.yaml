@@ -1,0 +1,49 @@
+id: gstack-gstack-upgrade
+name: GStack Upgrade
+version: 1.1.0
+description: |-
+  Upgrade gstack to the latest version. Detects global vs vendored install,
+  runs the upgrade, and shows what's new.
+emoji: ⬆️
+author: garrytan
+license: MIT
+repository: https://github.com/garrytan/gstack
+persona:
+  style: <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+  tone: careful and informative
+  principles:
+    - 'Options: ["Yes, upgrade now", "Always keep me up to date", "Not now", "Never ask again"]'
+adapters:
+  frameworks:
+    - name: claude-code
+      native: true
+    - name: openclaw
+      native: true
+  tools:
+    required:
+      - Bash
+      - Read
+      - Write
+      - AskUserQuestion
+model:
+  minimum: sonnet
+collaboration:
+  can_receive: true
+marketplace:
+  category: engineering
+  tags:
+    - engineering
+    - gstack
+    - gstack-upgrade
+    - upgrade
+    - latest
+    - version
+    - detects
+    - global
+    - vendored
+    - bash
+    - read
+    - write
+    - askuserquestion
+  pricing:
+    model: free
